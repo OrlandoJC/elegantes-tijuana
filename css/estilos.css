@@ -1,0 +1,284 @@
+/******************************************
+ *  Author : orlando de Jesus    
+ *  Created On : Thu Feb 01 2018
+ *  File : estilos.css
+ *
+ * CSS DIRECTORY
+ *	1. = GLOBAL
+ *	3. = HEADER
+ *	4. = BANNER
+ *	5. = DEMOSTRACIONES
+ *  6. = FOOTER
+ *******************************************/
+
+/* === GLOBAL SETTINGS === */
+* {
+	margin:  0;
+	box-sizing: border-box;
+}
+
+html,body{
+  text-rendering: optimizeLegibility;
+  text-rendering: geometricPrecision;
+}
+
+body {
+	background: #d4d2d2;
+}
+
+/* ===HEADER=== */
+header{
+	background:#dab372;
+	width: 100%;
+	top: 0;
+	position: sticky;
+	z-index: 1000
+}
+
+.header__container{
+	padding: 15px;
+	display: flex;
+	justify-content: space-between;
+
+	font-size: 1.1em;
+}
+
+.header__container nav{
+	margin-left: auto;
+}
+
+/* ===HEADER -Navigation=== */
+
+.header__container nav ul a{
+	text-decoration: none;
+	color: #4b301d;
+	margin: 10px;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+.header__logo {
+	font-family: 'Nunito Sans', sans-serif;
+		
+}
+.header__logo img{
+		width: 60px;
+		height: auto;
+}
+.header__container .header__logo a{
+	text-decoration: none;
+	color: #4b301d;
+	margin: 10px;
+}
+
+/* ===BANNER=== */
+
+.banner__container {
+	display: flex;
+   justify-content: center;
+}
+
+.banner__container .titulo {
+	width: 70%;
+	color: white;
+	text-align: center;
+	line-height: 1.6;
+}
+
+.banner__container .titulo p{
+	margin-top: 15px;
+	margin-bottom: 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: lighter;
+	font-size: 1.2em;
+	letter-spacing: .3px;
+}
+
+/*corregir arriba espacio*/
+
+.banner__container h1 {
+	color: white;
+	text-shadow: 4px 4px 2px rgba(75, 48, 29, 1);
+	font-size: 5em;
+	font-family: 'Berkshire Swash', cursive;
+}
+.banner .titulo {
+	padding-bottom: 80px;
+    padding-top: 80px;
+    line-height: 2;
+}
+
+.banner {
+	background-image: linear-gradient(
+      to right bottom,
+      rgba(75,48,27,0.9),
+      rgba(109,74,46,0.9)),
+	url(https://scontent.fcjs3-2.fna.fbcdn.net/v/t31.0-8/1911142_908801065797170_8029915306387232955_o.jpg?oh=86c3b86b8dba8c9e38664b1b973fc0d1&oe=5B1E0859);
+	background-position: 50% 20%;
+	width: 100%;
+}
+
+.banner__container .titulo .icon{
+	margin-top: 40px;
+	margin-left: 10px;
+	color: white;
+	padding: 10px;
+	border: 1px solid white;
+	border-radius: 20px;
+	font-family: 'Nunito Sans', sans-serif;
+	text-decoration: none;
+}
+
+.fa {
+	padding: 0 5px;
+}
+
+/* ===DEMOSTRACIONES=== */
+iframe {
+	width: 100%;
+	margin-top: 10px;
+	border: none;
+	-webkit-box-shadow: -2px 13px 23px -1px rgba(153,150,153,1);
+	-moz-box-shadow: -2px 13px 23px -1px rgba(153,150,153,1);
+	box-shadow: -2px 13px 23px -1px rgba(153,150,153,1);
+	padding: 10px;
+}
+
+.demostraciones {
+	margin-top: 50px;
+	margin-bottom: 90px;
+}
+
+.demostraciones .container h2 {
+	margin-bottom: 50px;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+.imagenes {
+	width: 100%;
+	margin-top: 50px;
+	background-color: #202224;
+	padding: 50px;
+}
+
+.imagenes img{
+	width: 100%;
+	height: 200px	
+}
+
+/* ===FOOTER=== */
+
+.footer {
+	background-color: #282c2f;
+	color: white;
+}
+
+.container__footer {
+	padding: 50px;
+
+}
+
+.container__footer .row .info {
+	margin-top: 20px;
+	letter-spacing: 1px;
+	line-height:1.5;
+}
+
+.container__footer .footer__contact .icon {
+	margin-right: 10px;
+}
+
+.container__footer .row .icon {
+	background-color: #33373a;
+	padding: 10px;
+	border-radius: 50px;
+}
+.footer__social {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.footer__social .social__about  {
+	margin-bottom: 20px;
+	line-height: 1.8;
+
+}
+
+.footer__social .social__about h3 {
+	margin-bottom: 20px;
+}
+
+.footer__social .social__socials .icon {
+	background-color: #33373a;
+	padding: 10px;
+	border-radius: 5px;
+	margin-right: 20px;
+}
+
+/*youtube*/
+
+a.ytp-watermark.yt-uix-sessionlink {
+    visibility: hidden;
+}
+
+/* ===RESPONSIVE RULES=== */
+
+/*iphone 6 PANTALLA MEDIANA*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+  	/*
+	configuracion en caso de que haya un menu completo --DESCONMENTAR
+  	
+  	.header {
+  		position: absolute;
+  	}
+  	
+  	.header .header__logo {}
+	
+	.header__container nav {
+		margin-top:50px;
+		top: 0;
+		left: 0;
+		background-color: red;
+		position: absolute;
+		height: 100vh;
+		width: 100%;
+		font-size: 2em;
+	 }
+		
+	.header__container nav ul {
+		padding: 10;
+	}
+	
+	 .header__container nav ul a{
+		display: block;
+		margin-top: 20px;
+	 }*/
+
+		.header__container {
+			background-color: transparent;
+		}
+	.header__container nav {
+		visibility: hidden;
+	 }
+	 .header__container .header__logo  {
+	 	display: block;
+	 }
+
+	 .banner__container .titulo p {
+	 	display: none ;
+	 }
+
+	.header__container {
+
+	}
+
+
+	.banner__container .icon {
+		display: block;
+	}
+
+	
+		
+}
